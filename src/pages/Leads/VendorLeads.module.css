@@ -1,0 +1,171 @@
+.wrapper {
+  padding: 1rem; /* p-4 */
+}
+
+.tableContainer {
+  overflow-x: auto;
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  border: 1px solid rgba(91, 120, 124, 1);
+}
+
+.table {
+  min-width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.tableHead {
+  background: var(--gradient-background); /* bg-gray-100 */
+  text-align: left;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 600;
+  color: #fff; /* text-gray-600 */
+  height: 65px;
+}
+
+.tableHead th {
+  padding: 0.75rem 1rem; /* px-4 py-3 */
+  text-align: center;
+}
+
+.tableRowEven {
+  background-color: #ffffff;
+  font-size: 0.875rem; /* text-sm */
+}
+
+.tableRowOdd {
+  background-color: #f9fafb; /* bg-gray-50 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.tableCell {
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.tableCell:first-child() {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  height: 2.5rem; /* h-10 */
+  width: 2.5rem; /* w-10 */
+  border-radius: 9999px; /* rounded-full */
+  object-fit: cover;
+}
+
+.cellName {
+  font-weight: 500;
+  color: #1f2937; /* text-gray-800 */
+}
+
+.cellEmail {
+  color: #4b5563; /* text-gray-600 */
+}
+
+.status {
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem; /* py-1 px-3 */
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.statusGreen {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.statusYellow {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.statusOrange {
+  background-color: #ffedd5;
+  color: #c2410c;
+}
+
+.activeBadge {
+  border-radius: 9999px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.inactiveBadge {
+  border-radius: 9999px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.actions {
+  padding: 0.75rem 1rem;
+}
+
+.actions button {
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.25rem 0.75rem; /* py-1 px-3 */
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.btnView {
+  background-color: #3b82f6; /* blue-500 */
+}
+
+.btnView:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.btnEdit {
+  background-color: #6366f1; /* indigo-500 */
+}
+
+.btnEdit:hover {
+  background-color: #4f46e5; /* indigo-600 */
+}
+
+.btnToggle {
+  background-color: #6b7280; /* gray-500 */
+}
+
+.btnToggle:hover {
+  background-color: #4b5563; /* gray-600 */
+}
+
+.btnStatus {
+  background-color: #f59e0b; /* yellow-500 */
+}
+
+.btnStatus:hover {
+  background-color: #d97706; /* yellow-600 */
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.paginationButtons button {
+  border-radius: 0.5rem;
+  background-color: #e5e7eb;
+  padding: 0.25rem 0.75rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.paginationButtons button:disabled {
+  opacity: 0.5;
+}

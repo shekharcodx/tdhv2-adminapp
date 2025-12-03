@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  h1 {
+    font-size: var(--text-2xl);
+  }
+  h2 {
+    font-size: var(--text-xl);
+  }
+  h3 {
+    font-size: var(--text-lg);
+  }
+  a {
+    color: var(--color-blue-600);
+    text-decoration-line: underline;
+  }
+}
+
+@theme {
+  --color-custom: rgba(91, 120, 124, 1);
+  --color-custom-light: rgba(137, 180, 188, 1);
+  --charcoal-blue-grey-one-color: #27343a;
+  --slate-gray-secondary-two-color: #5b787c;
+  --misty-teal-three-color: #89b4bc;
+  --light-gray-four-color: #cecccd;
+  --neutral-five-color: #efeeea;
+  --charcoal-blue-grey: #27343a;
+  --slate-gray-secondary: #5b787c;
+  --misty-teal: #89b4bc;
+  --light-gray: #cecccd;
+  --neutral-bg: linear-gradient(135deg, #fafafa, #f0f0f0);
+
+  --gradient-background: linear-gradient(
+    90deg,
+    rgba(91, 120, 124, 1) 0%,
+    rgba(137, 180, 188, 1) 35%
+  );
+}

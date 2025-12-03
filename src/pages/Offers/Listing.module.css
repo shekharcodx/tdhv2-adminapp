@@ -1,0 +1,61 @@
+.avatar {
+  height: 2.5rem; /* h-10 */
+  width: 2.5rem; /* w-10 */
+  border-radius: 9999px; /* rounded-full */
+  object-fit: cover;
+}
+
+.status {
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem; /* py-1 px-3 */
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.statusGreen {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.statusYellow {
+  background-color: #fef9c3;
+  color: #a16207;
+}
+
+.statusOrange {
+  background-color: #ffedd5;
+  color: #c2410c;
+}
+
+.activeBadge {
+  border-radius: 9999px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.inactiveBadge {
+  border-radius: 9999px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.tableRowEven {
+  background-color: #ffffff;
+  font-size: 0.875rem; /* text-sm */
+}
+
+.tableRowOdd {
+  background-color: #f9fafb; /* bg-gray-50 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.tableCell {
+  padding: 0.75rem 1rem;
+  text-align: center;
+}

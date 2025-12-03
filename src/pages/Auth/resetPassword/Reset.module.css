@@ -1,0 +1,131 @@
+.errorText {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 6px; /* slightly increased spacing */
+}
+
+.eyeToggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Wrapper */
+.resetWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 20px; /* added padding for better spacing on small screens */
+  margin-top: 0;
+}
+
+/* Card */
+.resetCard {
+  border-radius: 12px;
+  background: var(--neutral-bg);
+  padding: 2.5rem 2.25rem; /* slightly more padding */
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.heading {
+  margin-bottom: 1.75rem; /* increased space below heading */
+  color: var(--charcoal-blue-grey);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Form */
+.formGroup {
+  margin-bottom: 1.25rem; /* slightly more vertical spacing */
+  text-align: left;
+}
+
+.formLabel {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.6rem; /* small tweak for breathing room */
+  color: var(--charcoal-blue-grey);
+}
+
+/* Input */
+.inputField {
+  border-radius: 8px;
+  padding: 12px; /* slightly bigger padding */
+  border: 1px solid var(--light-gray);
+  background: #fff;
+  width: 100%;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 6px; /* space below inputs for error messages */
+}
+
+.inputField:focus {
+  border-color: var(--misty-teal);
+  box-shadow: 0 0 6px rgba(137, 180, 188, 0.5);
+  outline: none;
+}
+
+/* Button */
+.submitBtn {
+  border-radius: 8px;
+  padding: 14px; /* slightly bigger button for better click area */
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  background: var(--gradient-background);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem; /* increased space above button */
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.submitBtn:hover {
+  background: var(--slate-gray-secondary);
+  transform: scale(1.02);
+}
+
+/* OR text */
+.orText {
+  margin: 1.25rem 0; /* slightly more spacing */
+  color: var(--charcoal-blue-grey);
+  font-size: 14px;
+}
+
+/* Link */
+.forgetLink {
+  display: block;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid var(--slate-gray-secondary);
+  color: var(--slate-gray-secondary);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: 12px; /* add some space above link */
+}
+
+.forgetLink:hover {
+  background: var(--slate-gray-secondary);
+  color: #fff;
+}
+
+.errorMsg {
+  margin-top: 5px;
+  color: red;
+}

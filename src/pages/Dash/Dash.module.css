@@ -1,0 +1,294 @@
+.container {
+  padding: 2rem;
+  background: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+/* Buttons / chips */
+.btnPrimary {
+  background: #5b787c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btnPrimary:hover {
+  background: #466062;
+}
+.btnPrimary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnGhost {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  border-radius: 8px;
+  padding: 0.4rem 0.65rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btnGhost:hover {
+  background: #f1f5f9;
+}
+
+/* Fix action buttons alignment */
+.rowActions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: nowrap;
+}
+.rowActions button {
+  height: 36px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  padding: 0 0.9rem;
+}
+
+/* Column alignment fix */
+.table td:last-child {
+  width: 230px;
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 1.25rem;
+}
+
+.toggleButtons {
+  display: flex;
+  gap: 0.6rem;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #334155;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+.chip:hover {
+  background: #f1f5f9;
+}
+.chipActive {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+
+.dateFilter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Overlay calendar */
+.overlayBg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.overlayCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  max-width: 500px;
+}
+
+/* KPI */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+.kpiCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.kpiCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+}
+.kpiCard h3 {
+  color: #475569;
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem;
+}
+.kpiCard p {
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.card h2 {
+  font-size: 1.15rem;
+  color: #1e293b;
+}
+.select {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+/* Tables */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  color: #1e293b;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.table th {
+  background: #f6f8f9;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #475569;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.table tr:hover td {
+  background: #f9fafb;
+}
+.activeRow {
+  background: #f1f5f9 !important;
+}
+
+/* Expand row UI */
+.cellWithArrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+.arrowOpen {
+  transform: rotate(90deg);
+}
+
+/* Expanded section */
+.expandedSection {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: grid;
+  gap: 1.25rem;
+}
+.subSection {
+  display: grid;
+  gap: 0.75rem;
+}
+
+/* Horizontal scroll wrapper */
+.hScroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.6rem;
+}
+
+/* Insights */
+.insightsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.insightsList li {
+  background: #f8fafc;
+  border-left: 4px solid #5b787c;
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .table td:last-child {
+    width: auto;
+  }
+  .rowActions {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .card h2 {
+    font-size: 1rem;
+  }
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

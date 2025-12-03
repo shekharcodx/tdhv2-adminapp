@@ -1,0 +1,158 @@
+/* components/Sidebar.module.css */
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  border-right: 1px solid #eee;
+  height: 100vh;
+  padding: 20px 0;
+  padding-top: 0px !important;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #4a4a4a;
+  /* margin-bottom: 30px; */
+}
+
+.logoIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuHeader {
+  align-items: center;
+  padding: 12px 20px;
+  color: rgba(91, 120, 124, 1);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menuHeader:hover,
+.menuHeader.active {
+  background: linear-gradient(
+    90deg,
+    rgba(91, 120, 124, 1) 0%,
+    rgba(137, 180, 188, 1) 35%
+  );
+  color: rgb(255, 255, 255);
+  border-left: 4px solid rgb(0, 112, 132);
+}
+
+.menuHeader:hover svg,
+.menuHeader.active svg {
+  color: rgb(255, 255, 255);
+}
+
+.icon {
+  margin-right: 12px;
+  font-size: 16px;
+  color: rgba(91, 120, 124, 1);
+}
+
+.subMenu {
+  list-style: none;
+  padding-left: 40px;
+  margin: auto !important;
+  background-color: #f5f2f2;
+  width: 95%;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  /* Animation setup */
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: max-height 0.35s ease, padding 0.25s ease;
+}
+
+.subMenu.open {
+  max-height: 400px; /* adjust based on expected submenu size */
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.subMenuItem {
+  padding: 8px 0;
+  color: #7e7e7e;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.subMenuItem:hover,
+.subMenuItem.active {
+  color: rgba(91, 120, 124, 1);
+  font-weight: 500;
+}
+
+.subMenuItem:hover svg,
+.subMenuItem.active svg {
+  color: rgba(91, 120, 124, 1);
+  font-weight: 500;
+}
+
+.subSubMenu {
+  list-style: none;
+  padding-left: 40px;
+  margin: auto !important;
+  background-color: #f5f2f2;
+  width: 95%;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  /* Animation setup */
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: max-height 0.35s ease, padding 0.25s ease;
+}
+
+.subSubMenu.open {
+  max-height: 400px; /* adjust based on expected submenu size */
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.subSubMenuItem {
+  padding: 8px 0;
+  color: #7e7e7e;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.subSubMenuItem:hover,
+.subSubMenuItem.active {
+  color: rgba(91, 120, 124, 1);
+  font-weight: 500;
+}
+
+.subSubMenuItem:hover svg,
+.subSubMenuItem.active svg {
+  color: rgba(91, 120, 124, 1);
+  font-weight: 500;
+}

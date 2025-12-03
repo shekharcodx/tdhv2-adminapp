@@ -1,0 +1,130 @@
+/* Wrapper centers the content */
+.signinWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 24px; /* Slightly more padding */
+}
+
+/* Card container */
+.cardWrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Card styling */
+.signinCard {
+  border-radius: 12px;
+  background: var(--neutral-bg);
+  padding: 36px 32px; /* More balanced padding top-bottom and left-right */
+  box-shadow: 0 6px 24px rgba(39, 52, 58, 0.15);
+  border: 1px solid #ddd; /* ✅ Added border */
+}
+
+/* Title */
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--charcoal-blue-grey);
+  text-align: center;
+  margin-bottom: 2rem; /* Increased space below title */
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Slightly bigger gap between form groups */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Label */
+.label {
+  margin-bottom: 0.5rem; /* More space under label */
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--charcoal-blue-grey);
+}
+
+/* Input styling */
+.inputField {
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: 12px; /* Increased padding for better UX */
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.inputField:focus {
+  border-color: var(--misty-teal);
+  box-shadow: 0 0 4px rgba(137, 180, 188, 0.5);
+  outline: none;
+}
+
+/* 👁️ Password eye toggle */
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  top: 42px; /* Slightly lowered to vertically center with bigger input */
+  cursor: pointer;
+  color: var(--light-gray);
+  transition: color 0.3s ease;
+  padding: 6px; /* More clickable area */
+}
+
+.eyeIcon:hover {
+  color: var(--charcoal-blue-grey);
+}
+
+/* Button */
+.submitBtn {
+  background: var(--gradient-background);
+  border: none;
+  border-radius: 8px;
+  padding: 14px; /* Increased padding for bigger clickable button */
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  margin-top: 1rem; /* Space above the button */
+}
+
+.submitBtn:hover {
+  background: var(--slate-gray-secondary);
+  transform: scale(1.02);
+}
+
+/* Forget Password Link */
+.forgetLink {
+  display: block;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid var(--slate-gray-secondary);
+  color: var(--slate-gray-secondary);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: 16px; /* Added space above link */
+}
+
+.forgetLink:hover {
+  background: var(--slate-gray-secondary);
+  color: #fff;
+}
+
+.errorMsg {
+  margin-top: 5px;
+  color: red;
+}
